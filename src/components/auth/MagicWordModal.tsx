@@ -25,7 +25,7 @@ export const MagicWordModal: React.FC<MagicWordModalProps> = ({
             }, 1200);
         } else {
             setError(true);
-            setTimeout(() => setError(false), 800);
+            setTimeout(() => setError(false), 1200);
         }
     };
 
@@ -44,7 +44,7 @@ export const MagicWordModal: React.FC<MagicWordModalProps> = ({
                             error ? { x: [-10, 10, -10, 10, 0], scale: 1 } : { scale: 1, y: 0 }
                         }
                         transition={{ duration: 0.4 }}
-                        className="w-full max-w-md rounded-3xl bg-gradient-to-b from-magia-pink-600/20 to-magia-dark p-8 shadow-2xl border border-magia-pink-500/30 text-center relative overflow-hidden"
+                        className="w-full max-w-md rounded-3xl bg-linear-to-b from-magia-pink-600/20 to-magia-dark p-8 shadow-2xl border border-magia-pink-500/30 text-center relative overflow-hidden"
                     >
                         {/* Destellos del fondo */}
                         <div className="absolute -top-12 -left-12 w-32 h-32 bg-magia-pink-500/20 rounded-full blur-2xl" />
@@ -88,7 +88,7 @@ export const MagicWordModal: React.FC<MagicWordModalProps> = ({
 
                                 <button 
                                     type="submit" 
-                                    className="w-full py-3.5 px-6 rounded-2xl bg-gradient-to-r from-magia-pink-500 to-magia-pink-600 text-white font-semibold shadow-lg shadow-magia-pink-600/30 hover:shadow-magia-pink-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
+                                    className="w-full py-3.5 px-6 rounded-2xl bg-linear-to-r from-magia-pink-500 to-magia-pink-600 text-white font-semibold shadow-lg shadow-magia-pink-600/30 hover:shadow-magia-pink-500/50 hover:scale-[1.02] active:scale-[0.98] transition-all flex items-center justify-center gap-2"
                                 >
                                     <Sparkles className="w-5 h-5" />
                                     Iniciar Nuestra Historia

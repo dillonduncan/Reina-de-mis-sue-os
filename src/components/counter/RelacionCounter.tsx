@@ -7,7 +7,7 @@ interface RelacionCounterProps {
 }
 
 export const RelacionCounter: React.FC<RelacionCounterProps> = ({ startDate }) => {
-    const [timeLeft, setTimeLeft] = useState({ years: 0, months: 0, days: 0, hours: 0, minutes: 0 });
+    const [timeLeft, setTimeLeft] = useState({ years: 0, months: 0, days: 0, hours: 0, minutes: 0 , seconds:0});
     const [isMinimized, setIsMinimized] = useState<boolean>(true);
 
     useEffect(() => {
@@ -20,7 +20,12 @@ export const RelacionCounter: React.FC<RelacionCounterProps> = ({ startDate }) =
             let days = now.getDate() - start.getDate();
             let hours = now.getHours() - start.getHours();
             let minutes = now.getMinutes() - start.getMinutes();
+            let seconds=now.getSeconds()- start.getSeconds();
 
+            if(seconds<0){
+                seconds+=60;
+                minutes-=1;
+            }
             if (minutes < 0) {
                 minutes += 60;
                 hours -= 1;
@@ -39,7 +44,7 @@ export const RelacionCounter: React.FC<RelacionCounterProps> = ({ startDate }) =
                 months += 12;
             }
 
-            setTimeLeft({ years, months, days, hours, minutes });
+            setTimeLeft({ years, months, days, hours, minutes, seconds });
         };
 
         calculateTime();
@@ -76,7 +81,7 @@ export const RelacionCounter: React.FC<RelacionCounterProps> = ({ startDate }) =
                         </div>
 
                         {/* Grid de 5 columnas para años, meses, días, horas y minutos */}
-                        <div className="grid grid-cols-5 gap-1 text-center w-full bg-magia-dark/50 p-1.5 rounded-xl border border-magia-pink-500/20">
+                        <div className="grid grid-cols-6 gap-1 text-center w-full bg-magia-dark/50 p-1.5 rounded-xl border border-magia-pink-500/20">
                             <div className="flex flex-col">
                                 <span className="text-[11px] md:text-xs font-bold text-magia-sky-100">{timeLeft.years}</span>
                                 <span className="text-[7px] md:text-[8px] text-magia-sky-200/70 uppercase tracking-wider">Años</span>
@@ -96,6 +101,10 @@ export const RelacionCounter: React.FC<RelacionCounterProps> = ({ startDate }) =
                             <div className="flex flex-col">
                                 <span className="text-[11px] md:text-xs font-bold text-magia-sky-100">{timeLeft.minutes}</span>
                                 <span className="text-[7px] md:text-[8px] text-magia-sky-200/70 uppercase tracking-wider">Min</span>
+                            </div>
+                            <div className="flex flex-col">
+                                <span className="text-[11px] md:text-xs font-bold text-magia-sky-100">{timeLeft.seconds}</span>
+                                <span className="text-[7px] md:text-[8px] text-magia-sky-200/70 uppercase tracking-wider">Seg</span>
                             </div>
                         </div>
                     </motion.div>

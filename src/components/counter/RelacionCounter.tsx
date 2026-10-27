@@ -2,11 +2,11 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Heart } from 'lucide-react';
 
-interface RelationshipCounterProps {
+interface RelacionCounterProps {
   startDate: string; // Formato ISO, ej: "2024-10-12T00:00:00"
 }
 
-export const RelationshipCounter: React.FC<RelationshipCounterProps> = ({ startDate }) => {
+export const RelacionCounter: React.FC<RelacionCounterProps> = ({ startDate }) => {
   const [timeLeft, setTimeLeft] = useState({ years: 0, months: 0, days: 0, hours: 0, minutes: 0 });
 
   useEffect(() => {

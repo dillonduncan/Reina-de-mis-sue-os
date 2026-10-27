@@ -6,6 +6,7 @@ import { TimelineData } from './data/TimeLineData'
 import { VinylPlayer } from './components/audio/VinylPlayer';
 import { playList } from './data/SongsData';
 import { Cartita } from './components/letter/Cartita';
+import { RelacionCounter } from './components/counter/RelacionCounter';
 
 function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -38,6 +39,8 @@ function App() {
             <Sparkles className="w-5 h-5" />
             {isUnlocked && (
               <main className="pb-20">
+                {/**contador */}
+                <RelacionCounter startDate='2025-07-04T14:00:00'/>
                 {/**vinilo */}
                 <VinylPlayer songs={playList} />              
                 <TimeLine items={TimelineData} />

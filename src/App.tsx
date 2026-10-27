@@ -27,13 +27,13 @@ function App() {
       {/* Fondo mágico global */}
       {isUnlocked && <SkyBackground />}
 
-      {/* LUNA INTERACTIVA FLOTANTE (Fixed con z-40 para que nunca la tape nada) */}
+      {/* LUNA */}
       {isUnlocked && (
         <motion.div 
           whileHover={{ scale: 1.15 }}
           whileTap={{ rotate: [0, -6, 6, -6, 6, 0], scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300, damping: 15 }}
-          className="fixed top-6 right-8 md:top-10 md:right-20 w-36 h-36 md:w-52 md:h-52 drop-shadow-[0_0_35px_rgba(255,255,255,0.4)] cursor-pointer pointer-events-auto z-40"
+          className="fixed top-3 right-3 md:top-10 md:right-20 w-28 h-28 md:w-52 md:h-52 drop-shadow-[0_0_25px_rgba(255,255,255,0.4)] cursor-pointer pointer-events-auto z-40"
         >
           <img 
             src="/image/luna sin fondo.png" 

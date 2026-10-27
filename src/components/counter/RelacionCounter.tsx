@@ -8,7 +8,7 @@ interface RelacionCounterProps {
 
 export const RelacionCounter: React.FC<RelacionCounterProps> = ({ startDate }) => {
     const [timeLeft, setTimeLeft] = useState({ years: 0, months: 0, days: 0, hours: 0, minutes: 0 });
-    const [isMinimized, setIsMinimized] = useState<boolean>(false);
+    const [isMinimized, setIsMinimized] = useState<boolean>(true);
 
     useEffect(() => {
         const calculateTime = () => {

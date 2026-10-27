@@ -84,5 +84,12 @@ export const playList: Song[] = [
         artist: 'Kaleth Morales',
         audioUrl: '/audio/amame.mp3',
         coverUrl: ''
+    },
+    {
+        id: '13',
+        title: 'Asomate a la Ventana',
+        artist: 'Kevin Florez',
+        audioUrl: '/audio/asomate-a-la-ventana.mp3',
+        coverUrl: ''
     }
 ]

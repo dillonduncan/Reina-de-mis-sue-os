@@ -25,7 +25,7 @@ export const MagicWordModal: React.FC<MagicWordModalProps> = ({
             }, 1200);
         } else {
             setError(true);
-            setTimeout(() => setError(false), 1200);
+            setTimeout(() => setError(false), 2000);
         }
     };
 

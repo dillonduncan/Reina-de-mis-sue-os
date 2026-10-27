@@ -5,9 +5,14 @@ import { TimeLine } from './components/timeline/TimeLine';
 import { TimelineData } from './data/TimeLineData'
 import { VinylPlayer } from './components/audio/VinylPlayer';
 import { playList } from './data/SongsData';
+import { Cartita } from './components/letter/Cartita';
 
 function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
+  const mensajeCarta = `Jelou broder, ¿Como se siente mi niña? esto es un lugar donde puedes ver nuestra historia, para que nunca se te olvide cuanto te ama tu principe, para que sepas que aqui estare para cuidarte.
+    Gracias por cada uno de estos momentos, gracias por tus caricias, gracias por tu amor.
+    TE AMO, TE QUIERO Y TE EXTRAÑO, de aqui a las estrellas.
+  `
 
   return (
     <>
@@ -15,7 +20,7 @@ function App() {
         {/*Modal de autenticacion (Palabra magica)*/}
         {!isUnlocked && (
           <MagicWordModal onUnlock={() => setIsUnlocked(true)} />
-        )}   
+        )}
 
         {/*Contenido principal de la app*/}
         <div className="flex flex-col items-center justify-center min-h-screen p-6 text-center">
@@ -24,19 +29,28 @@ function App() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-script text-magia-sky-100 mb-4">Reina de mis sueños</h1>
-          <p className="text-magia-sky-200/80 max-w-md mb-8 text-sm md:text-base">Bienvenida a la Patria Milagro</p>/*Bienvenida a nuestro universo*/
+          <p className="text-magia-sky-200/80 max-w-md mb-8 text-sm md:text-base">Bienvenida a la Patria Milagro. Mentiiraaaa.</p>
+          <p className="text-magia-sky-200/80 max-w-md mb-8 text-sm md:text-base">Bienvenida a Nuestra Linea del Tiempo.</p>
+
 
           {/*linea del tiempo */}
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-magia-pink-600/20 border border-magia-pink-500/30 text-magia-pink-300 font-semibold shadow-lg">
             <Sparkles className="w-5 h-5" />
             {isUnlocked && (
               <main className="pb-20">
-                <VinylPlayer songs={playList}/>
+                {/**vinilo */}
+                <VinylPlayer songs={playList} />              
                 <TimeLine items={TimelineData} />
+                {/*Carta*/}
+                <Cartita
+                  destinataria='Reina de mis Sueños'
+                  remitente='Miguel'
+                  mensaje={mensajeCarta}
+                />
               </main>
             )}
           </div>
-          
+
         </div>
       </div>
     </>

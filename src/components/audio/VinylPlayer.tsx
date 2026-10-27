@@ -67,7 +67,7 @@ export const VinylPlayer: React.FC<VinylPlayerProps> = ({ songs }) => {
                         initial={{ opacity: 0, scale: 0.8, y: 20 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
                         exit={{ opacity: 0, scale: 0.8, y: 20 }}
-                        className="mb-2 w-72 rounded-2xl bg-magia-dark/95 backdrop-blur-md border border-magia-pink-500/40 p-4 shadow-2xl shadow-magia-pink-600/30 flex flex-col items-center relative overflow-hidden"
+                        className="mb-2 w-72 rounded-2xl bg-magia-dark/95 backdrop-blur-md border border-magia-gold/60 p-4 shadow-2xl shadow-magia-pink-600/30 flex flex-col items-center relative overflow-hidden"
                     >
                         {/* Botón minimizar */}
                         <button
@@ -79,8 +79,8 @@ export const VinylPlayer: React.FC<VinylPlayerProps> = ({ songs }) => {
                         </button>
 
                         <div className="flex items-center gap-2 mb-3 w-full px-1">
-                            <Music className="w-4 h-4 text-magia-pink-400 animate-pulse" />
-                            <span className="text-[11px] font-medium text-magia-pink-300 tracking-wide uppercase">
+                            <Music className="w-4 h-4 text-magia-gold animate-pulse" />
+                            <span className="text-[11px] font-medium text-magia-gold tracking-wide uppercase">
                                 Musiquita
                             </span>
                         </div>
@@ -102,7 +102,7 @@ export const VinylPlayer: React.FC<VinylPlayerProps> = ({ songs }) => {
                                 <div className="absolute inset-1 rounded-full border border-zinc-800/60 pointer-events-none" />
                                 <div className="absolute inset-4 rounded-full border border-zinc-800/40 pointer-events-none" />
 
-                                <div className="w-12 h-12 rounded-full bg-magia-pink-600 border border-magia-sky-100/50 overflow-hidden flex items-center justify-center relative shadow-inner">
+                                <div className="w-12 h-12 rounded-full bg-magia-gold/60 border border-magia-sky-100/50 overflow-hidden flex items-center justify-center relative shadow-inner">
                                     {currentSong.coverUrl ? (
                                         <img
                                             src={currentSong.coverUrl}
@@ -122,7 +122,7 @@ export const VinylPlayer: React.FC<VinylPlayerProps> = ({ songs }) => {
                             <h4 className="text-xs font-script text-magia-sky-100 truncate">
                                 {currentSong.title}
                             </h4>
-                            <p className="text-[10px] text-magia-pink-300 font-sans truncate mt-0.5">
+                            <p className="text-[10px] text-magia-gold font-sans truncate mt-0.5">
                                 {currentSong.artist}
                             </p>
                         </div>
@@ -131,14 +131,14 @@ export const VinylPlayer: React.FC<VinylPlayerProps> = ({ songs }) => {
                         <div className="flex items-center gap-4 mt-1">
                             <button
                                 onClick={togglePlay}
-                                className="p-2.5 rounded-full bg-linear-to-r from-magia-pink-500 to-magia-pink-600 text-white shadow-md shadow-magia-pink-600/40 hover:scale-105 active:scale-95 transition-all"
+                                className="p-2.5 rounded-full bg-linear-to-r to-magia-gold/60 text-white shadow-md shadow-magia-gold/20 hover:scale-105 active:scale-95 transition-all"
                             >
                                 {isPlaying ? <Pause className="w-4 h-4" /> : <Play className="w-4 h-4 ml-0.5" />}
                             </button>
 
                             <button
                                 onClick={handleNext}
-                                className="p-2 rounded-full bg-magia-dark border border-magia-pink-400/30 text-magia-sky-200 hover:text-white active:scale-95 transition-all"
+                                className="p-2 rounded-full bg-magia-dark border border-magia-gold/60 text-magia-sky-200 hover:text-white active:scale-95 transition-all"
                                 title="Siguiente canción"
                             >
                                 <SkipForward className="w-4 h-4" />
@@ -154,21 +154,21 @@ export const VinylPlayer: React.FC<VinylPlayerProps> = ({ songs }) => {
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     onClick={() => setIsMinimized(false)}
-                    className="flex items-center gap-2.5 px-3.5 py-2 rounded-full bg-magia-dark/90 backdrop-blur-md border border-magia-pink-500/50 text-magia-sky-100 shadow-xl shadow-magia-pink-600/20 hover:border-magia-pink-400 transition-all group"
+                    className="flex items-center gap-2.5 px-3.5 py-2 rounded-full bg-magia-dark/90 backdrop-blur-md border border-magia-gold/60 text-magia-sky-100 shadow-xl shadow-magia-gold/10 hover:border-magia-gold transition-all group"
                 >
                     <div className="relative w-6 h-6 flex items-center justify-center">
                         <motion.div
                             animate={{ rotate: isPlaying ? 360 : 0 }}
                             transition={{ repeat: isPlaying ? Infinity : 0, duration: 3, ease: 'linear' }}
-                            className="w-full h-full rounded-full bg-black border border-magia-pink-500 flex items-center justify-center overflow-hidden"
+                            className="w-full h-full rounded-full bg-black border border-magia-gold/60 flex items-center justify-center overflow-hidden"
                         >
-                            <div className="w-2 h-2 rounded-full bg-magia-pink-400" />
+                            <div className="w-2 h-2 rounded-full bg-magia-gold/60" />
                         </motion.div>
                     </div>
                     <span className="text-xs font-script truncate max-w-25">
                         {currentSong.title}
                     </span>
-                    <ChevronUp className="w-4 h-4 text-magia-pink-300 group-hover:-translate-y-0.5 transition-transform" />
+                    <ChevronUp className="w-4 h-4 text-magia-gold group-hover:-translate-y-0.5 transition-transform" />
                 </motion.button>
             )}
         </div>

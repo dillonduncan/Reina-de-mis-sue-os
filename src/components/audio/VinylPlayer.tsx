@@ -154,7 +154,7 @@ export const VinylPlayer: React.FC<VinylPlayerProps> = ({ songs }) => {
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     onClick={() => setIsMinimized(false)}
-                    className="flex items-center gap-2.5 px-3.5 py-2 rounded-full bg-magia-dark/90 backdrop-blur-md border border-magia-gold/60 text-magia-sky-100 shadow-xl shadow-magia-gold/10 hover:border-magia-gold transition-all group"
+                    className="cursor-pointer flex items-center gap-2.5 px-3.5 py-2 rounded-full bg-magia-dark/90 backdrop-blur-md border border-magia-gold/60 text-magia-sky-100 shadow-xl shadow-magia-gold/10 hover:border-magia-gold transition-all group"
                 >
                     <div className="relative w-6 h-6 flex items-center justify-center">
                         <motion.div

@@ -118,7 +118,7 @@ export const RelacionCounter: React.FC<RelacionCounterProps> = ({ startDate }) =
                     initial={{ scale: 0.8, opacity: 0 }}
                     animate={{ scale: 1, opacity: 1 }}
                     onClick={() => setIsMinimized(false)}
-                    className="flex items-center gap-2 px-3 py-2 rounded-full bg-magia-dark/90 backdrop-blur-md border border-magia-sky-400 text-magia-sky-100 shadow-xl shadow-magia-sky-400/20 hover:border-magia-sky-500 transition-all group"
+                    className="cursor-pointer flex items-center gap-2 px-3 py-2 rounded-full bg-magia-dark/90 backdrop-blur-md border border-magia-sky-400 text-magia-sky-100 shadow-xl shadow-magia-sky-400/20 hover:border-magia-sky-500 transition-all group"
                 >
                     <Heart className="w-4 h-4 text-magia-sky-400 fill-magia-sky-400 animate-pulse" />
                     <span className="text-xs font-script truncate">

@@ -26,8 +26,8 @@ export const Cartita: React.FC<CartitaProps> = ({
                     className="cursor-pointer relative p-6 rounded-3xl bg-linear-to-r from-magia-pink-600/20 via-magia-dark to-magia-pink-600/20 border border-magia-pink-500/40 shadow-xl shadow-magia-pink-600/10 flex flex-col items-center group overflow-hidden"
                 >
                     {/* Destellos decorativos */}
-                    <div className="absolute top-2 left-3 text-magia-pink-300/40 text-xs">✨</div>
-                    <div className="absolute bottom-2 right-3 text-magia-pink-300/40 text-xs">🌸</div>
+                    <div className="absolute top-2 left-3 text-magia-gold text-xs">✨</div>
+                    <div className="absolute bottom-2 right-3 text-xs">🌸</div>
 
                     <div className="w-14 h-14 rounded-full bg-magia-pink-600/30 border border-magia-pink-400/50 flex items-center justify-center mb-3 group-hover:bg-magia-pink-500/40 transition-colors shadow-inner">
                         <Mail className="w-7 h-7 text-magia-pink-300 animate-bounce" />

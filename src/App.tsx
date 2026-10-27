@@ -8,6 +8,7 @@ import { playList } from './data/SongsData';
 import { Cartita } from './components/letter/Cartita';
 import { RelacionCounter } from './components/counter/RelacionCounter';
 import { LogoutButton } from './components/auth/LogoutButton';
+import { SkyBackground } from './components/background/SkyBackgraund';
 
 function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -40,6 +41,8 @@ function App() {
             <Sparkles className="w-5 h-5" />
             {isUnlocked && (
               <main className="pb-20">
+                {/*fondo*/}
+                <SkyBackground/>
                 {/**contador */}
                 <RelacionCounter startDate='2025-07-04T14:00:00'/>
                 {/*Boton de salida */}

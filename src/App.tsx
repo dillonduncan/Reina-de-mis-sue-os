@@ -3,6 +3,8 @@ import { MagicWordModal } from './components/auth/MagicWordModal';
 import { Heart, Sparkles } from 'lucide-react';
 import { TimeLine } from './components/timeline/TimeLine';
 import { TimelineData } from './data/TimeLineData'
+import { VinylPlayer } from './components/audio/VinylPlayer';
+import { playList } from './data/SongsData';
 
 function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -13,7 +15,7 @@ function App() {
         {/*Modal de autenticacion (Palabra magica)*/}
         {!isUnlocked && (
           <MagicWordModal onUnlock={() => setIsUnlocked(true)} />
-        )}
+        )}   
 
         {/*Contenido principal de la app*/}
         <div className="flex flex-col items-center justify-center min-h-screen p-6 text-center">
@@ -24,14 +26,17 @@ function App() {
           <h1 className="text-4xl md:text-6xl font-script text-magia-sky-100 mb-4">Reina de mis sueños</h1>
           <p className="text-magia-sky-200/80 max-w-md mb-8 text-sm md:text-base">Bienvenida a la Patria Milagro</p>/*Bienvenida a nuestro universo*/
 
+          {/*linea del tiempo */}
           <div className="inline-flex items-center gap-2 px-6 py-3 rounded-2xl bg-magia-pink-600/20 border border-magia-pink-500/30 text-magia-pink-300 font-semibold shadow-lg">
             <Sparkles className="w-5 h-5" />
             {isUnlocked && (
               <main className="pb-20">
+                <VinylPlayer songs={playList}/>
                 <TimeLine items={TimelineData} />
               </main>
             )}
           </div>
+          
         </div>
       </div>
     </>

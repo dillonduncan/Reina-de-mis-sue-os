@@ -7,6 +7,7 @@ import { VinylPlayer } from './components/audio/VinylPlayer';
 import { playList } from './data/SongsData';
 import { Cartita } from './components/letter/Cartita';
 import { RelacionCounter } from './components/counter/RelacionCounter';
+import { LogoutButton } from './components/auth/LogoutButton';
 
 function App() {
   const [isUnlocked, setIsUnlocked] = useState(false);
@@ -41,6 +42,8 @@ function App() {
               <main className="pb-20">
                 {/**contador */}
                 <RelacionCounter startDate='2025-07-04T14:00:00'/>
+                {/*Boton de salida */}
+                <LogoutButton onLogout={()=>setIsUnlocked(false)}/>
                 {/**vinilo */}
                 <VinylPlayer songs={playList} />              
                 <TimeLine items={TimelineData} />

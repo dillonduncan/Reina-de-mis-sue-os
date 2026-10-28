@@ -71,7 +71,8 @@ function App() {
     "ME AMAASS?",
     "Cada vez que Sonries una Estrella Aumenta su Brillo",
     "Tu sabes como se llama el doble de riesgo del agente 007? 014 JAJAAJAJJAJAJ",
-    "Como se dice 'Misterio' en china? CHANCHANCHAN JAJAAJAJAJAJJ"
+    "Como se dice 'Misterio' en china? CHANCHANCHAN JAJAAJAJAJAJJ",
+    "Quisiera ser pobre por un dia. Esto de serlo todos los dias ya esta canson"
 
   ];
   const mensajeCarta = `Jelou broder, ¿Como se siente mi niña? esto es un lugar donde puedes ver nuestra historia, para que nunca se te olvide cuanto te ama tu principe, para que sepas que aqui estare para cuidarte.
@@ -106,7 +107,7 @@ function App() {
           whileTap={{ rotate: [0, -6, 6, -6, 6, 0], scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300, damping: 15 }}
           onClick={handleMoonClick}
-          className="fixed top-3 right-3 md:top-10 md:right-20 w-28 h-28 md:w-52 md:h-52 drop-shadow-[0_0_25px_rgba(255,255,255,0.4)] cursor-pointer pointer-events-auto z-40"
+          className="fixed top-3 right-3 md:top-10 md:right-20 w-28 h-28 md:w-52 md:h-52 drop-shadow-[0_0_60px_rgba(255,255,255,0.6)] cursor-pointer pointer-events-auto z-40"
         >
           <img
             src="/image/luna sin fondo.png"

@@ -56,7 +56,7 @@ export const TimeLine: React.FC<TimelineProps> = ({ items }) => {
                                         whileTap={{ scale: 0.98 }}
                                         onClick={() => setSelectedItem(item)}
                                         className="cursor-pointer p-5 md:p-6 rounded-3xl bg-linear-to-b from-magia-pink-600/10 to-magia-dark border border-magia-pink-500/20 shadow-xl backdrop-blur-sm transition-all hover:border-magia-pink-400/50 group">
-                                        <div className="flex items-center justify-between gap-2 text-ts font-semibold text-magia-pink-300 mb-2">
+                                        <div className="flex items-center justify-between gap-2 text-ts font-semibold text-magia-sky-100 mb-2">
                                             <div className="flex items-center gap">
                                                 <Calendar className='w-4 h-4' />
                                                 <span>{item.date}</span>
@@ -100,17 +100,14 @@ export const TimeLine: React.FC<TimelineProps> = ({ items }) => {
                             className="relative w-full max-w-lg rounded-3xl bg-linear-to-b from-magia-pink-600/25 via-magia-dark to-magia-dark border border-magia-pink-500/40 p-6 md:p-8 shadow-2xl shadow-magia-pink-600/20 overflow-hidden my-auto max-h-[90vh] flex flex-col items-center text-center"
                         >
                             {/* Decoraciones en las esquinas (Florecitas / Destellos) */}
-                            <div className="absolute top-3 left-3 text-magia-pink-300/40 text-lg select-none">
+                            <div className="absolute top-3 left-3 text-magia-gold text-lg select-none">
                                 🌸✨
-                            </div>
-                            <div className="absolute top-3 right-14 text-magia-pink-300/40 text-lg select-none">
+                            </div>                           
+                            <div className="absolute bottom-3 left-4 text-magia-gold text-base select-none">
                                 ✨🌸
                             </div>
-                            <div className="absolute bottom-3 left-4 text-magia-pink-300/30 text-base select-none">
-                                🌸
-                            </div>
-                            <div className="absolute bottom-3 right-4 text-magia-pink-300/30 text-base select-none">
-                                🌸
+                            <div className="absolute bottom-3 right-4 text-magia-gold text-base select-none">
+                                🌸✨
                             </div>
 
                             {/* Botón cerrar táctil */}

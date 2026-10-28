@@ -68,7 +68,10 @@ function App() {
     "Ven asomatee amoorr",
     "Y cuando las cosas esten mal, llora, pero valora mientras sonrias",
     "Dont't worry, be happy",
-    ""
+    "ME AMAASS?",
+    "Cada vez que Sonries una Estrella Aumenta su Brillo",
+    "Tu sabes como se llama el doble de riesgo del agente 007? 014 JAJAAJAJJAJAJ",
+    "Como se dice 'Misterio' en china? CHANCHANCHANCHAAANNNN JAJAAJAJAJAJJ"
 
   ];
   const mensajeCarta = `Jelou broder, ¿Como se siente mi niña? esto es un lugar donde puedes ver nuestra historia, para que nunca se te olvide cuanto te ama tu principe, para que sepas que aqui estare para cuidarte.

@@ -107,7 +107,7 @@ function App() {
           whileTap={{ rotate: [0, -6, 6, -6, 6, 0], scale: 1.05 }}
           transition={{ type: "spring", stiffness: 300, damping: 15 }}
           onClick={handleMoonClick}
-          className="fixed top-3 right-3 md:top-10 md:right-20 w-28 h-28 md:w-52 md:h-52 drop-shadow-[0_0_60px_rgba(255,255,255,0.6)] cursor-pointer pointer-events-auto z-40"
+          className="fixed top-3 right-3 md:top-10 md:right-20 w-28 h-28 md:w-52 md:h-52 drop-shadow-[0_0_60px_rgba(255,255,255,0.8)] cursor-pointer pointer-events-auto z-40"
         >
           <img
             src="/image/luna sin fondo.png"

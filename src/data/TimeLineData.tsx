@@ -30,5 +30,12 @@ export const TimelineData: TimelineItem[] = [
     shortDescription: 'Dia de volleyyy',
     fullStory: 'Recuerdas ese dia? cuando me pusiste brillo para los labios jaajajaj. Hubo otro dia cuando me cayo el balon en la cara y tomabamos descancitos de besos jajajjja.',
     imageUrl: '/image/Dia de cancha.png',
+  },{
+    id: '5',
+    date: '- 31 de Mayo 2025',
+    title: 'Cumpleaños de Marcela',
+    shortDescription: 'Mi Mujer',
+    fullStory: 'Nada que decir. Que Mujer TAN, PERO TAN HERMOSA.',
+    imageUrl: '/image/una chica sexy 2.jpg',
   }
 ];

@@ -175,7 +175,7 @@ function App() {
               Bienvenida a la Patria Milagro. Mentiiraaaa.
             </p>
             <p className="text-magia-sky-200/90 max-w-md text-sm md:text-base font-medium drop-shadow">
-              Bienvenida a Nuestra Linea del Tiempo.
+              Bienvenida a Nuestra Linea del Tiempo, Mi Niña.
             </p>
           </div>
 

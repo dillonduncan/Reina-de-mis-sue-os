@@ -90,6 +90,20 @@ export const Cartita: React.FC<CartitaProps> = ({
                             <div className="mt-6 text-right pt-2 border-t border-magia-pink-500/30">
                                 <p className="text-xs text-magia-pink-300 font-sans">Con todo mi arroz,</p>
                                 <p className="text-lg font-script text-magia-sky-100">{remitente}</p>
+
+                                {/**fotito */}
+                                <div className="top-105 absolute w-10 h-10 md:w-12 md:h-12 bg-magia-pink-500 rounded-full blur-xl animate-pulse" />
+                                <div className="bottom-10 relative w-10 h-10 md:w-12 md:h-12 overflow-hidden">
+                                    <img
+                                        src='image/diita de finca.jpg'
+                                        alt="Dia de Finca"
+                                        className="w-full h-full object-cover"
+                                        style={{
+                                            clipPath: 'polygon(50% 15%, 65% 0%, 85% 0%, 100% 20%, 100% 45%, 50% 95%, 0% 45%, 0% 20%, 15% 0%, 35% 0%)',
+                                            borderRadius: '12px'
+                                        }}
+                                    />
+                                </div>
                             </div>
 
                             {/* Corazoncito decorativo inferior */}

@@ -283,5 +283,40 @@ export const TimelineData: TimelineItem[] = [
     shortDescription: 'Nos volvemos a encontrar, señorita',
     fullStory: 'Que emocion ese dia, hable con tu mamá, salude a tu papá, tu te veias espectacularmente hermosa, radiante con tu suetercito de la seleccion, te extrabaña tanto.',
     imageUrl: '/image/partido de seleccion.png',
+  }, {
+    id: '41',
+    date: '- 30 de Junio 2026',
+    title: 'Partido de Volley',
+    shortDescription: 'Bolis de Galleta Limon',
+    fullStory: 'Amor los bolis estaban ricosss, como no te gustó, se puso incomoda esa noche.',
+    imageUrl: '/image/dia volley.jpeg',
+  }, {
+    id: '42',
+    date: '- 06 de Julio 2026',
+    title: 'Torta',
+    shortDescription: 'Gracias mi reina',
+    fullStory: 'Muchas gracias mi niña. Te Amo. Yo iba iq hacerle favor a tu tia jajajaj, sorpresaaaa. Fui feliz ese dia, quizas el cumpleaños mas especial de los que recuerdo',
+    imageUrl: '/image/torta.jpeg',
+  }, {
+    id: '43',
+    date: '- 06 de Julio 2026',
+    title: 'Happy Birthday To You',
+    shortDescription: '',
+    fullStory: 'Gracias por hacerlo especial. Veniamos de unos dias complicados, no hubo mejor forma para arreglarlo.',
+    imageUrl: '/image/piso donde carmen.jpg',
+  }, {
+    id: '44',
+    date: '- 08 de Julio 2026',
+    title: 'Una Visita Inesperada',
+    shortDescription: '',
+    fullStory: 'No se me cruzo en ningun momento por la mente, yo en el patio de tu casa, totalmente inesperado, tu con elias, yo viendo parte de tu dia en tu casa, siendo tu, me enamore mas de ti ese dia.',
+    imageUrl: '/image/visita inesperada.png',
+  }, {
+    id: '45',
+    date: '- 11 de Julio 2026',
+    title: 'Una Visita Inesperada 2',
+    shortDescription: 'Se repitio',
+    fullStory: 'Lo mejor es que se repitioooo, lo malo fue que me echaste jajajajaja. Tan linda con su pijamita de panda.',
+    imageUrl: '/image/visita inesperada 2.png',
   }
 ];

@@ -246,7 +246,7 @@ export const TimelineData: TimelineItem[] = [
     date: '- 04 de Abril 2026',
     title: 'Ultima Noche',
     shortDescription: 'Ultima noche antes de despedirnos',
-    fullStory: 'Te acuerdas de cuando saliste corriendo con jaineth? jjajaja errdale, saber que obvio prefiero tu cabellito ondulado, pero tu hermoso cabello esa noche alisado, como esa cascada hermosa que cae al vacio.',
+    fullStory: 'Te acuerdas de cuando saliste corriendo con jaineth? jjajaja errdale, sabes que obvio prefiero tu cabellito ondulado, pero tu hermoso cabello esa noche alisado, como esa cascada hermosa que cae al vacio.',
     imageUrl: '/image/ultima noche.jpeg',
   }, {
     id: '36',
@@ -255,5 +255,33 @@ export const TimelineData: TimelineItem[] = [
     shortDescription: '',
     fullStory: 'Parece que esto es lo que mas se repite en nuestra historia, y es lo que mas duele.',
     imageUrl: '/image/despedida.jpeg',
+  }, {
+    id: '37',
+    date: '- Otro Dia para Brillar',
+    title: 'Divina Princesa',
+    shortDescription: '',
+    fullStory: 'Mira que niña mas hermosa',
+    imageUrl: '/image/niña hermosa.jpeg',
+  }, {
+    id: '38',
+    date: '- 5000 Años Luz',
+    title: 'Hermosa Mujer',
+    shortDescription: 'Dicen que ese dia las estrellas dejaron de brillar para admirar tu brillo',
+    fullStory: 'Es que mira lo que es esa mujer, mira lo que es mi novia',
+    imageUrl: '/image/mi mujer.jpeg',
+  }, {
+    id: '39',
+    date: '- Uñas',
+    title: 'Uñas Uñas',
+    shortDescription: 'Hermosas Hermosas',
+    fullStory: 'Bien Preciosotas',
+    imageUrl: '/image/uñitas 2.jpeg',
+  }, {
+    id: '40',
+    date: '- 28 de Junio 2026',
+    title: 'Partido de Colombia',
+    shortDescription: 'Nos volvemos a encontrar, señorita',
+    fullStory: 'Que emocion ese dia, hable con tu mamá, salude a tu papá, tu te veias espectacularmente hermosa, radiante con tu suetercito de la seleccion, te extrabaña tanto.',
+    imageUrl: '/image/partido de seleccion.png',
   }
 ];

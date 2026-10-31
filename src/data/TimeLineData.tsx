@@ -334,10 +334,25 @@ export const TimelineData: TimelineItem[] = [
     imageUrl: '/image/ese jueves 2.jpeg',
   }, {
     id: '48',
-    date: '- 16 de Julio 2026, 9:25 am',
-    title: 'Ultimo Adios',
-    shortDescription: 'Otra despedida dolorosa',
-    fullStory: 'Desde ese dia nada todo cambió, nada ha tenido el mismo sabor, el mismo sentimiento de tener a mi niña entre los brazos, de ver su sonrisa, de oir su risa y oler su cabello con la suave brisa, desde ese dia ya no la veo y en mi corazon se ha borrado la sonrisa, ese ultimo beso, ese ultimo abrazo, los tengo guardados, sin ellos me hago pedazos. Te extraño, mi corazon tiene prisa de sentir los latidos del tuyo. Te Amo',
-    imageUrl: '/image/ese jueves 2.jpeg',
+    date: '- 09 de Agosto 2026',
+    title: 'Pijama Nueva',
+    shortDescription: '',
+    fullStory: 'Ayyy, con su nueva pijamita',
+    imageUrl: '/image/videllamada nariz porcina.jpeg',
+  }, {
+    id: '49',
+    date: '- 04 de Noviembre 2026',
+    title: 'Nuevo Mes',
+    shortDescription: 'Felices 16 meses, mi reina',
+    fullStory: 'Este dia tan especial cumplimos 16 meses, de lucha, de paciencia, de desesperacion, de tristeza, pero de Amor,hoy te pienso, hoy te extraño, hoy te Amo, lo unico que espero es el dia en que puedas estar de nuevo entre mis brazos, con tu amor, con tu vida. Te amo mi reina, hagamos que esto no se acabe, que el amor sea mas fuerte que todo. Te extraño para siempre porque nunca podre olvidarte.',
+    imageUrl: '/image/diita de finca.jpg',
+  }, {
+    id: '50',
+    date: '- 07 de Noviembre 2026',
+    title: 'Feliz Cumpleaños Princesa',
+    shortDescription: 'Felices 16 meses, mi reina',
+    fullStory: 'Este dia tan especial cumplimos 16 meses, de lucha, de paciencia, de desesperacion, de tristeza, pero de Amor,hoy te pienso, hoy te extraño, hoy te Amo, lo unico que espero es el dia en que puedas estar de nuevo entre mis brazos, con tu amor, con tu vida. Te amo mi reina, hagamos que esto no se acabe, que el amor sea mas fuerte que todo. Te extraño para siempre porque nunca podre olvidarte.',
+    imageUrl: '/image/diita de finca.jpg',
   }
 ];
+

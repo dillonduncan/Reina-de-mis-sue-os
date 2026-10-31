@@ -325,5 +325,19 @@ export const TimelineData: TimelineItem[] = [
     shortDescription: 'La Reina deslumbrando el paisaje',
     fullStory: 'Dios mio que mujer, sin palabras, eres la mujer que tiene todo el derecho sobre mi. Cuando vi a esa mujer saliendo, nooonono, no hay nada que se compare, mi mujer. Que dia especial, cuando compramos empanadas, cuando volvimos a vernos luego en tu casa, fue el dia en que mas tiempo compartimos, el viaje de regreso recostada a mi, todo fue maravilloso.',
     imageUrl: '/image/dia de piscina(2).jpg',
+  }, {
+    id: '47',
+    date: '- 16 de Julio 2026, 9:25 am',
+    title: 'Ultimo Adios',
+    shortDescription: 'Otra despedida dolorosa',
+    fullStory: 'Desde ese dia nada todo cambió, nada ha tenido el mismo sabor, el mismo sentimiento de tener a mi niña entre los brazos, de ver su sonrisa, de oir su risa y oler su cabello con la suave brisa, desde ese dia ya no la veo y en mi corazon se ha borrado la sonrisa, ese ultimo beso, ese ultimo abrazo, los tengo guardados, sin ellos me hago pedazos. Te extraño, mi corazon tiene prisa de sentir los latidos del tuyo. Te Amo',
+    imageUrl: '/image/ese jueves 2.jpeg',
+  }, {
+    id: '48',
+    date: '- 16 de Julio 2026, 9:25 am',
+    title: 'Ultimo Adios',
+    shortDescription: 'Otra despedida dolorosa',
+    fullStory: 'Desde ese dia nada todo cambió, nada ha tenido el mismo sabor, el mismo sentimiento de tener a mi niña entre los brazos, de ver su sonrisa, de oir su risa y oler su cabello con la suave brisa, desde ese dia ya no la veo y en mi corazon se ha borrado la sonrisa, ese ultimo beso, ese ultimo abrazo, los tengo guardados, sin ellos me hago pedazos. Te extraño, mi corazon tiene prisa de sentir los latidos del tuyo. Te Amo',
+    imageUrl: '/image/ese jueves 2.jpeg',
   }
 ];
